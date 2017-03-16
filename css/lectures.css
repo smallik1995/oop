@@ -1,0 +1,14 @@
+.navbar-default .navbar-nav > li > a:hover {
+  background: #f0f0f0; }
+
+.navbar-default .navbar-nav > li > a.active {
+  color: #555;
+  background-color: #e7e7e7; }
+
+.logo {
+  width: 75px;
+  height: 50px;
+  margin-top: -14px; }
+
+li > a {
+  font-family: 'georgia'; }

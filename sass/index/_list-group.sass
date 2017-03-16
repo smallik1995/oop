@@ -1,0 +1,21 @@
+@media screen
+  div#sticky
+    @media (min-width: 1200px)
+        position: fixed
+        right: 16px
+        top: 142px
+        width: 323px
+        display: block
+    @media (max-width: 1199px)
+        padding-right: 342px
+        padding-left: 90px
+        display: none
+@media screen        
+  div#sticky.active
+    @media (max-width: 1199px)
+        display: block
+        position: fixed
+        top: 142px
+        right: -319px
+        
+    

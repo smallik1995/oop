@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+    <title>Объектно-ориентированное программирование</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/test.css">
+
+
+  </head>
+  <body>
+<!--    ШАПКА   -->
+<header>  
+        <nav role="navigation" class="navbar navbar-default">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a href="#" class="navbar-brand"><img class="logo" src="img/logo.png" alt="opp"></a>
+            </div>
+            <!-- Collection of nav links and other content for toggling -->
+            
+            <div id="navbarCollapse" class="collapse navbar-collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="lectures.html">Лекции</a></li>
+                <li><a href="laboratory_works.html">Лабороторные работы</a></li>
+                <li><a href="sample_programs.html">Примеры программ</a></li>
+                <li><a href="tests.html">Тесты</a></li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <form action="" class="search-form" id="search">		
+                        <input type="text" class="search-form__input" placeholder="Поиск...">
+                        <button class="search-form__submit" type="submit"><img src="img/search.jpg"></button>
+                    </form>
+                </li>
+              </ul> 
+            </div>
+          </div>
+        </nav>     
+    </header>
+   
+
+ 
+
+<div id="go" style="DISPLAY: inline">
+  <form id="go" >                 
+    <div class="test_open">
+      <h2>Вам предстоит пройти тест из 20 заданий.</h2>
+      <p><em>Критерии оценивания:</em></p>
+      <ul>
+        <li type="none">"5" не менее 17 верных ответов;</li>
+        <li type="none">"4" не менее 14 верных ответов;</li>
+        <li type="none">"3" не менее 10 верных ответов;</li>
+      </ul>
+      <INPUT type=button value="Пройти" onClick="show('test');show('go')">
+    </div>
+  </form>
+</div>
+                        
+                  
+                   
+<!--1-->
+<div id="test" style="DISPLAY:none"><form id="vop1" >
+<P align="center">1 из 20<br><br></p><P><strong>Что такое зарезервированные слова?</strong></P>
+<a id="0" style="cursor:pointer" onClick="Engine(this.id);show('test1');show('test')">1) Слова, имеющие навсегда фиксированный смысл и написание, входят в состав языка , не изменяются пользователем</a><br>
+<a id="1" style="cursor:pointer" onClick="Engine(this.id);show('test1');show('test')">2) Идентификаторы, имеющие фиксированное начертание, смысл которых можно изменить</a><br>
+<a id="1" style="cursor:pointer" onClick="Engine(this.id);show('test1');show('test')">3) Идентификаторы пользователя</a><br>
+<a id="1" style="cursor:pointer" onClick="Engine(this.id);show('test1');show('test')">4) Все перечисленные идентификаторы</a><br>
+</form>
+</div>
+          
+ 
+ <!--2-->
+<div id="test1" style="DISPLAY:none"><form id="vop2" >
+<P align="center">2 из 20<br><br></p><P><strong>Что такое стандартные идентификаторы?</strong></P>
+<a id="2" style="cursor:pointer" onClick="Engine(this.id);show('test2');show('test1')">1)Идентификаторы, имеющие навсегда фиксированный смысл и начертание</a><br>
+<a id="0" style="cursor:pointer" onClick="Engine(this.id);show('test2');show('test1')">2) Идентификаторы, обозначающие стандартные функции, процедуры, типы данных</a><br>
+<a id="2" style="cursor:pointer" onClick="Engine(this.id);show('test2');show('test1')">3) Идентификаторы пользователя</a><br>
+<a id="2" style="cursor:pointer" onClick="Engine(this.id);show('test2');show('test1')">4) Все перечисленные идентификаторы</a><br>
+</form>
+</div>                 
+ 
+           
+           
+<!--3-->
+<div id="test2" style="DISPLAY:none"><form id="vop3" >
+<P align="center">3 из 20<br><br></p><P><strong>Каким символом заканчивается программа на языке PASCAL?</strong></P>
+ 
+<a style="cursor:pointer" onClick="Engine(this.id);show('test3');show('test2')"id="0">1) Точкой</a><br>
+<a style="cursor:pointer" onClick="Engine(this.id);show('test3');show('test2')"id="3">2) END</a><br>
+<a style="cursor:pointer" onClick="Engine(this.id);show('test3');show('test2')"id="3">3) Точкой с запятой</a><br>
+<a style="cursor:pointer" onClick="Engine(this.id);show('test3');show('test2')"id="3">4) Запятой</a><br>
+</form></div> 
+ 
+ 
+            
+                    
+                    
+<!--4-->          
+<div id="test3" style="DISPLAY:none"><form id="vop4" >
+<P align="center">4 из 20<br><br></p><P><strong>Что является разделителем между операторами?</strong></P>
+ 
+<a style="cursor:pointer" onClick="Engine(this.id);show('test4');show('test3')"id="0">1) Точка с запятой</a><br>
+<a style="cursor:pointer" onClick="Engine(this.id);show('test4');show('test3')"id="4">2) Пробел</a><br>
+<a style="cursor:pointer" onClick="Engine(this.id);show('test4');show('test3')"id="4">3) Запятая</a><br>
+<a style="cursor:pointer" onClick="Engine(this.id);show('test4');show('test3')"id="4">4) Двоеточие</a><br>
+<a style="cursor:pointer" onClick="Engine(this.id);show('test4');show('test3')"id="4">5) Точка</a><br>
+</form></div> 
+                    
+          
+                     
+<!--5-->
+<div id="test4" style="DISPLAY:none"><form id="vop5" >
+<P align="center">5 из 20<br><br></p><P><strong>Какая запись оператора присваивания является верной?</strong></P>
+ 
+<a style="cursor:pointer" onClick="Engine(this.id);show('test5');show('test4')"id="0">1)A:=B;</a><br>
+<a style="cursor:pointer" onClick="Engine(this.id);show('test5');show('test4')"id="5">2)A+V:=C;</a><br>
+<a style="cursor:pointer" onClick="Engine(this.id);show('test5');show('test4')"id="5">3)READ(A:=B);</a><br>
+<a style="cursor:pointer" onClick="Engine(this.id);show('test5');show('test4')"id="5">4)A=:B;</a><br>
+<a style="cursor:pointer" onClick="Engine(this.id);show('test5');show('test4')"id="5">5)A+B=:C;</a><br>
+</form></div> 
+ 
+                    
+          
+                   
+<!--6-->
+<div id="test5" style="DISPLAY:none"><form id="vop6" >
+<P align="center">6 из 20<br><br></p><P><strong>Какой из операторов является простым?</strong></P>
+ 
+<a style="cursor:pointer" onClick="Engine(this.id);show('test6');show('test5')"id="0">1):=</a><br>
+<a style="cursor:pointer" onClick="Engine(this.id);show('test6');show('test5')"id="6">2)IF</a><br>
+<a style="cursor:pointer" onClick="Engine(this.id);show('test6');show('test5')"id="6">3)CASE</a><br>
+<a style="cursor:pointer" onClick="Engine(this.id);show('test6');show('test5')"id="6">4)VAR</a><br>
+<a style="cursor:pointer" onClick="Engine(this.id);show('test6');show('test5')"id="6">5)FOR</a><br>
+</form></div>  
+                    
+          
+<!--7-->
+<div id="test6" style="DISPLAY:none"><form id="vop7" >
+<P align="center">7 из 20<br><br></p><P><strong>Какой идентификатор описывает литерный тип?</strong></P>
+ 
+<a style="cursor:pointer" onClick="Engine(this.id);show('test7');show('test6')"id="0">1) CHAR</a><br>
+<a style="cursor:pointer" onClick="Engine(this.id);show('test7');show('test6')"id="7">2) SHORTINT</a><br>
+<a style="cursor:pointer" onClick="Engine(this.id);show('test7');show('test6')"id="7">3) WORD</a><br>
+<a style="cursor:pointer" onClick="Engine(this.id);show('test7');show('test6')"id="7">4) BYTE</a><br>
+<a style="cursor:pointer" onClick="Engine(this.id);show('test7');show('test6')"id="7">5) STRING</a><br>
+</form></div> 
+
+
+<!--8-->
+<div id="test7" style="DISPLAY:none"><form id="vop8" >
+<P align="center">8 из 20<br><br></p><P><strong>Какие простые стандартные типы данных вы знаете?</strong></P>
+ 
+<a style="cursor:pointer" onClick="Engine(this.id);show('test8');show('test7')"id="0">1) Целый, вещественный, логический и литерный</a><br>
+<a style="cursor:pointer" onClick="Engine(this.id);show('test8');show('test7')"id="8">2) Числовой, текстовый и файловый</a><br>
+<a style="cursor:pointer" onClick="Engine(this.id);show('test8');show('test7')"id="8">3) Интервальный и перечисляемый</a><br>
+<a style="cursor:pointer" onClick="Engine(this.id);show('test8');show('test7')"id="8">4) Постоянный и переменный</a><br>
+<a style="cursor:pointer" onClick="Engine(this.id);show('test8');show('test7')"id="8">5) Строковый, текстовый, числовой и логический</a><br>
+</form></div> 
+
+
+<!--9-->
+<div id="test8" style="DISPLAY:none"><form id="vop9" >
+<P align="center">9 из 20<br><br></p><P><strong>Какой из операторов является простым?</strong></P>
+ 
+<a style="cursor:pointer" onClick="Engine(this.id);show('test9');show('test8')"id="0">1)Read(X1,X2,...,Xn);</a><br>
+<a style="cursor:pointer" onClick="Engine(this.id);show('test9');show('test8')"id="9">2)Write(X1,X2,...,Xn);</a><br>
+<a style="cursor:pointer" onClick="Engine(this.id);show('test9');show('test8')"id="9">3)Readl(X1;X2;...;Xn);</a><br>
+<a style="cursor:pointer" onClick="Engine(this.id);show('test9');show('test8')"id="9">4)Writeln(X1;X2;...;Xn);</a><br>
+<a style="cursor:pointer" onClick="Engine(this.id);show('test9');show('test8')"id="9">5)Правильного ответа нет</a><br>
+</form></div> 
+
+
+<!--10-->
+<div id="test9" style="DISPLAY:none"><form id="vop10" >
+<P align="center">10 из 20<br><br></p><P><strong>Какая форма записи процедуры вывода данных правильная?</strong></P>
+ 
+<a style="cursor:pointer" onClick="Engine(this.id);show('test10');show('test9')"id="10">1)Read(Y1,Y2,...,Yn);</a><br>
+<a style="cursor:pointer" onClick="Engine(this.id);show('test10');show('test9')"id="0">2)Write(Y1,Y2,...,Yn);</a><br>
+<a style="cursor:pointer" onClick="Engine(this.id);show('test10');show('test9')"id="10">3)Readln(Y1;Y2;...;Yn);</a><br>
+<a style="cursor:pointer" onClick="Engine(this.id);show('test10');show('test9')"id="10">4)Writen(Y1;Y2;...;Yn);</a><br>
+<a style="cursor:pointer" onClick="Engine(this.id);show('test10');show('test9')"id="10">5)Правильного ответа нет</a><br>
+</form></div> 
+
+
+<!--11-->
+<div id="test10" style="DISPLAY:none"><form id="vop11" >
+<P align="center">11 из 20<br><br></p><P><strong>Формат вывода на экран для целых чисел:</strong></P>
+ 
+<a style="cursor:pointer" onClick="Engine(this.id);show('test11');show('test10')"id="0">1)X:N, где N - общая длина поля вывода</a><br>
+<a style="cursor:pointer" onClick="Engine(this.id);show('test11');show('test10')"id="11">2)X:N, где X - общая длина поля вывода</a><br>
+<a style="cursor:pointer" onClick="Engine(this.id);show('test11');show('test10')"id="11">3)X:N:M, где N - общая длина поля вывода, M - количество цифр дробной части</a><br>
+<a style="cursor:pointer" onClick="Engine(this.id);show('test11');show('test10')"id="11">4)X:N:M, где M - общая длина поля вывода, N - количество цифр дробной части</a><br>
+<a style="cursor:pointer" onClick="Engine(this.id);show('test11');show('test10')"id="11">5)Правильный ответ отсутствует</a><br>
+</form></div> 
+
+<!--20-->
+<div id="test11" style="DISPLAY:none"><form id="vop12" >
+<P align="center">12 из 20<br><br></p><P><strong>Основные части программы на яз. Паскаль:</strong></P>
+ 
+<a style="cursor:pointer" onClick="Engine(this.id);otv();ca();show('test11')"id="0">1) заголовок, раздел описаний, раздел операторов</a><br>
+<a style="cursor:pointer" onClick="Engine(this.id);otv();ca();show('test11')"id="12">b) раздел описаний, раздел процедур, раздел функций</a><br>
+<a style="cursor:pointer" onClick="Engine(this.id);otv();ca();show('test11')"id="12">c) заголовок, раздел полключения модулей, раздел описания переменных</a><br>
+<a style="cursor:pointer" onClick="Engine(this.id);otv();ca();show('test11')"id="12">c) заголовок, раздел присваивания значений, раздел операторов</a><br>
+<a style="cursor:pointer" onClick="Engine(this.id);otv();ca();show('test11')"id="12">c) раздел описаний, раздел алгоритма, раздел присваиваний</a><br>
+</form></div>
+                    
+          
+                
+<!--Ответ 1-->
+<div id="otv1" style="DISPLAY:none"><form id="ot1" >
+<P align="center"><strong>тест пройден</strong><br><br>из 12 вопросов у вас <a style="color:#404040" id = "Txt">0</a> правильных ответов.<br><br>
+ 
+<p align="center">неправилные ответы на вопросы <a id = "Txt1"></a><a id = "Txt2"></a><a id = "Txt3"></a><a id = "Txt4"></a><a id = "Txt5"></a><a id = "Txt6"></a><a id = "Txt7"><a id = "Txt8"><a id = "Txt9"><a id = "Txt10"><a id = "Txt11"></a><a id = "Txt12"></p><br><br>
+</form></div>
+
+    
+<script src="js/libs.min.js"></script>
+<script src="js/navbar.js"></script>
+<script src="js/test.js"></script> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script> 
+  </body>
+</html>

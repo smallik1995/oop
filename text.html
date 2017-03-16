@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/laboratory_works.css">
+</head>
+<body>
+	<div class="modal fade lab1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+
+
+        <h2>Тема: «Основные понятия ООП. Объявление и использование  классов»
+</h2> <br>
+        <h3>&#8226 Цели занятия:</h3>
+        <h4>Обучающие:</h3>
+        <p>
+             - учащиеся должны знать:  понятия класса, объекта, инкапсуляции, наследования, полиморфизма;    
+        </p>
+        <p>
+            - учащиеся должны уметь: составлять алгоритмы решения задач  с использованием классов на языке С++. 
+        </p>
+        <h4>Развивающие:</h4>
+        <p>
+            - развитие памяти, умения анализировать, сравнивать, строить аналогии;
+        </p>
+        <p>
+            - развитие логического  мышления;
+        </p>
+        <p>
+            - развитие самостоятельности, самооценки, самоконтроля, сосредоточенности;
+        </p>
+        <h4>Воспитательные:</h4>
+        <p>
+             - воспитание ответственности, требовательности к себе;
+        </p>
+        <p>
+             - воспитание  трудолюбия,  бережного отношения к имуществу, безукоризненного  соблюдения правил ТБ и санитарно-гигиенических норм в кабинете.
+        </p>
+        <h3>&#8226 Тип занятия: <span class="italic">лекция.</span></h3>
+        <h3>&#8226 Оборудование: <span class="italic">ПЭВМ.</span></h3>
+        <h3>План занятия:</h3>
+        <li>Организационный момент.</li>
+        <li>Постановка целей занятия.</li>
+        <li>Актуализация нового материала по плану:</li>
+          <li class="tab">Сущность ООП.</li>
+          <li class="tab">Понятие <span class="p"> класса,объекта,инкапсуляции, наследования полиморфизма;</span></li>
+          <li class="tab">Представление об объектах.</li>
+          <li class="tab">Методы класса.</li>
+          <li class="tab">Примеры задач.</li>
+        <li>Домашнее задание.Основные вопросы по теме.</li>
+        <li>Подведение итогов занятия.</li>
+        <li>Рефлексия.</li>
+        <br>
+        <li>Сущность объектно-оринтированнного подхода в программировании</li>
+        <h2>Введение</h2>
+       
+        <p>
+          Развитие объектно-ориентированного метода обусловлено ограниченностью разработанных ранее методов программирования. Задачи, для которых создавались процедурные языки программирования, характеризовались небольшим объемом команд и не требовали дополнительной внутренней организации. Когда же размер программы велик, список команд становится слишком громоздким, и код необходимо разделять на  более мелкие логические части. Деление программы на функции и модули является  основой структурного программирования, как способа организации программ.
+        </p>
+        <p>
+          Объектно-ориентированный подход к программированию заключается в моделировании объектов реального мира, интерпретируемых как совокупность свойств и поведения. Примерами свойств  для людей могут являться цвет глаз или место работы; для автомобилей – мощность двигателя и количество дверей. В этом смысле свойства объектов равносильны данным в программах. Поведение – это некоторое действие объекта в ответ на внешнее воздействие. Поведение сходно с функциями – функция вызывается, чтобы совершить какое-либо действие.<span class="caps">Основополагающая идея объектно-ориентированного подхода к программированию   -  это объединение данных и функций, оперирующих этими данными, в одно целое, которое и называется объектом.</span>
+        </p>
+        <br>
+        <h2>Основными понятиями объектно-ориентированных языков</h2>
+        <p>
+          Типичная программа на С++ состоит из совокупности объектов, взаимодействующих между собой посредством вызова функций (методов) друг друга. <span class="caps"> Основными понятиями объектно-ориентированных языков являются: объект, класс, наследование, полиморфизм, перегрузка, инкапсуляция.</span> 
+        </p>
+        <p>
+          <span class="caps">1) Инкапсуляция </span> - механизм, связывающий вместе код и данные, которыми он манипулирует, и одновременно защищающий их от произвольного доступа со стороны другого кода, внешнего по отношению к рассматриваемому. Основой инкапсуляции при ОПП является класс.
+        </p>
+        <p>
+          <span class="caps">2) Наследование</span> - механизм, с помощью которого один объект (произвольного класса) приобретает свойства другого объекта ( родительского, базового класса ). При исползовании наследования новый объект не обязательно описывать, начиная с нуля, что существенно упрощает работу программиста. Наследование позволяет какому-либо объекту наследовать от своего родителя общие атрибуты, а для себя опрелять только те характеристики, которые делают его уникальным внутри класса.
+        </p>
+        <p>
+          <span class="caps">3) Полиморфизм </span>- механизм, позволяющий использовать один и тот же интерфейс для общего класса действий. Пример: Имеются 3 массива для хранения:
+        </p>
+        <li>целых чисел</li>
+        <li>чисел с плавающей точкой</li>
+        <li>символов</li>
+        <p>Вместо трех подпрограмм управления в объектно-ориентированной программе требуется всего одна подпрограмма (один интерфейс) </p>
+        <h2>Классы</h2>
+        <p><span class="caps">Класс - это структурированный тип, включающий в себя типизированные элементы-данные (свойства) и элементы-функции (методы), применяемые по отношению к этим данным. </span></p>
+        <p><span class="caps"> Класс объявляется следующим образом: class имя класса </span></p>
+        <p>
+        <pre>
+{private:        -Внутренние (недоступные) элементы класса 
+protected:       -Защищенные элементы класса 
+public:          -Общие (доступные) элементы класса;};
+        </pre> 
+        </p>
+        <p>
+          <span class="caps">Например.</span> Объявим класс студенты: элементы-данные -фамилия, год поступления, специальность, элементы -функции: вывод информации о студенты, вычисление средней стипендии за год.
+        </p>
+        <pre>
+<span class="element">class</span> stydent
+{ 
+<span class="element">char</span> fam[10]; 
+<span class="element">int</span> god; 
+<span class="element">char</span> spec[10]; 
+public:
+<span class="element">void</span> vivod(<span class="element">void</span>); 
+<span class="element">float</span> stip(<span class="element">float</span>)};
+        </pre>
+        <p>
+          Описание предусматривает три сенции. Элементы класса, объявленные в секции <span class="caps">private</span>, называются внутренними. Они доступны только функциям того же класса. Элементы класса, объявленные в секции <span class="caps">protected</span>, называются защищенными. Они доступны функциям не только данного класса, но и его потомков. Элементы класса, объявленные в секции <span class="caps">public</span>, называются общими. Они доступны за пределами класса в любом месте программы. Если при описании класса тип доступа к элементам не указан, то по умолчанию принимается тип <span class="caps">private</span> . Обычно, приватными делают все свойства класса, а публичными - его методы. Все действия с закрытыми свойствами класса реализуются через его методы.
+        </p>
+        <p>
+          Опреление класса обеспечивает шаблон, с помощью которого программы могут создать объекты типа этого класса, подобно тому, как программы создают переменные типа <span class="italic">int, char</span> и т.д. <span class="caps">Объектом называются пременная , созданная как преставитель класса, то есть имеющая соотвествующий классу тип.</span>
+        </p>
+        <p>
+          Например, для приведенного выше примера объявим два объекта данного класса: <br>
+          <span class="italic">student st1,st2;</span>
+        </p>
+        <p>
+          <span class="caps">Программа присваивает значения элементам данных класса, используя оператор точку.</span> Например,<span class="italic"> st1.god=1990 </span>
+        </p>
+        <p>
+          <span class="caps">Программа вызывает функцию-метод класса, используя оператор точку. Формат вызова метода класса: имя_объекта.имя функции(фактические параметры).</span> Параметры могут отсутствовать, но скобки указываются. Например: <span class="italic">st1.vivod(), st2.stip();</span>
+        </p>
+        <p>
+          <span class="caps">Методы</span> могут быть описаны как внутри, так и вне определения класса. В последнем случае определение класса должно содержать прототипы этих функций, а заголовок описываемой функции должен включать кваоификатор видимости, который состоит из имени класса и знака «::»(оператор глобального разрешения). Таким образом, компилятору сообщается,что определяемой функции доступны внутренние элементы(поля) класса:
+        </p>
+        <p>
+          <span class="caps">тип_результата имя_класса::имя_функции(список формальных параметров)<br>
+          {тело функции;}</span>
+        </p>
+        <h4>Пример 1:</h4>
+        <li >Сформируйте класс "Сотрудники": фамилия, личный номер, оклад. Выведите информацию о двух сотрудниках.</li>
+        <p>(метод(функцию)опишем вне определения класса)</p>
+        
+<pre>
+<span class="element">#include</span> <span class="elementr">"stdafx.h"</span>
+<span class="element">#include</span> <span class="elementr">&lt;iostream&gt;</span>
+<span class="element">#include</span> <span class="elementr">&lt;iomanip&gt;</span>
+<span class="element">#include</span> <span class="elementr">&lt;string.h&gt;</span>
+<span class="element">using namespace</span> std;
+<span class="element">class</span> sotrudn
+{
+<span class="element">public:
+char</span> fam[20];
+<span class="element">int</span> nom;
+<span class="element">float</span> oklad;
+<span class="element">void</span> vivod(void);};
+<span class="element">void</span> sotrudn::vivod(<span class="element">void</span>)
+{cout&lt;&lt;<span class="elementr">"FAm"</span>&lt;&lt;fam&lt;&lt;endl;
+cout&lt;&lt;<span class="elementr">"nom"</span>&lt;&lt;nom&lt;&lt;endl;
+cout&lt;&lt;<span class="elementr">"oklad"</span>&lt;&lt;oklad&lt;&lt;endl;}
+<span class="element">int</span> _tmain(<span class="element">int</span> argc, _TCHAR* argv[])
+{sotrudn boss, worker;
+sotrudn a[n];
+<span class="element">for</span> (i=0;i&lt;n;i++)
+{cout&lt;&lt;<span class="elementr">"FAm"</span>&lt;&lt;endl;cin&gt;&gt;a[i]&#46;fam;
+cout&lt;&lt;<span class="elementr">"nom"</span>&lt;&lt;endl;cin&gt;&gt;a[i]&#46;nom;
+cout&lt;&lt;<span class="elementr">"oklad"</span>&lt;&lt;endl; cin&gt;&gt;a[i]&#46;oklad;
+boss&#46;vivod();
+worker&#46;vivod();
+<span class="element">return</span> 0;}       
+</pre>
+        <h4>Пример 2:</h4>
+        <p>
+          Сформируйте клаасс “Прямоугольник”: стороны, функции для их чтения и записи, нахождения периметра и площади. Опишите 2 объекта данного класса.  Вычислите периметр и площадь для данных объектов.
+        </p>
+        <pre>
+<span class="element">#include</span> <span class="elementr">"stdafx&#46;h"</span>
+<span class="element">#include</span> <span class="elementr">&#60;iostream&#62;</span>
+<span class="element">#include</span> <span class="elementr">&#60;iomanip&#62;</span>
+<span class="element">using namespace</span> std;
+<span class="elementg">//Объявление класса прямоугольника&#46;</span>
+<span class="element">class</span> rect
+{ <span class="element">float</span> m_a, m_b; <span class="elementg">//Стороны&#46;</span>
+<span class="element">public</span>:
+ <span class="elementg">//Методы класса&#46;</span>
+ <span class="elementg">//Методы по чтению и записи сторон&#46;</span>
+ <span class="element">void</span> SetA(<span class="element">float</span> a);
+ <span class="element">void</span> SetB(<span class="element">float</span> b);
+ <span class="element">float</span> GetA();
+ <span class="element">float</span> GetB();
+ <span class="element">float</span> square(); <span class="elementg">//Площадь&#46;</span>
+ <span class="element">float</span> perim();<span class="elementg"> //Периметр&#46;</span>
+}; 
+<span class="elementg">//Реализация методов класса&#46;
+//Методы по чтению и записи сторон&#46;</span>
+<span class="element">void</span> rect::SetA(<span class="element">float</span> a)
+{ <span class="element">if</span>(a&#62;0)   m_a = a; 
+ <span class="element">else</span>   m_a = 1; }
+<span class="element">void</span> rect::SetB(<span class="element">float</span> b)
+{ <span class="element">if</span>(b&#62;0)   m_b = b; 
+ <span class="element">else</span>   m_b = 1; }
+<span class="element">float</span> rect::GetA()
+{ <span class="element">return</span> m_a;}
+<span class="element">float</span> rect::GetB()
+{ <span class="element">return</span> m_b;}
+<span class="elementg">//Площадь&#46;</span>
+<span class="element">float</span> rect::square()
+{ <span class="element">return</span> m_a*m_b;}
+<span class="elementg">//Периметр&#46;</span>
+<span class="element">float</span> rect::perim()
+{ <span class="element">return</span> (m_a+m_b)*2;}
+<span class="elementg">//Не является ли прямоульник квадратом&#46;</span>
+<span class="element">int</span> _tmain(<span class="element">int</span> argc, _TCHAR* argv[])
+  { 
+ rect  pr1,pr2;
+ pr1&#46;SetA(5);
+ pr1&#46;SetB(3);
+ pr2&#46;SetA(7);
+ pr2&#46;SetB(4);
+ cout&#60;&#60;<span class="elementr">"Perimeter = "</span>&#60;&#60;pr1&#46;perim()&#60;&#60;endl;
+ cout&#60;&#60;<span class="elementr">"Square = "</span>&#60;&#60;pr1&#46;square()&#60;&#60;endl;
+ cout&#60;&#60;<span class="elementr">"Perimeter = "</span>&#60;&#60;pr2&#46;perim()&#60;&#60;endl;
+ cout&#60;&#60;<span class="elementr">"Square = "</span>&#60;&#60;pr2&#46;square()&#60;&#60;endl;
+  <span class="element">return</span> 0;
+} 
+        </pre>
+    </div>
+  </div>
+</div>
+</body>
+</html>
